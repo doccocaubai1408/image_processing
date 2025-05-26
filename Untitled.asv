@@ -41,7 +41,7 @@ end
 H=zeros(P,Q);
 uo=P/2;
 vo=Q/2;
-Do=10;
+Do=20;
 for u=1:P
     for v=1:Q
         D=sqrt((u-uo)^2+(v-vo)^2);
@@ -87,6 +87,8 @@ end
 m8=m6;
 %B7:
 m6=m6(1:M,1:N);
+
+
 figure
 subplot(2,5,1);
 imshow(mau);
@@ -122,6 +124,6 @@ title('Buoc 3: Pho tan 3D ');
 subplot(1,2,2);
 plot(abs(m4));
 title('Pho tan 2D');
-
+% Làm nét b?ng cách c?ng ?nh g?c + ph?n cao t?n
 
 
